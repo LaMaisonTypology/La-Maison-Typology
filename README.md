@@ -39,4 +39,3 @@ Visi komunitas La Maison Typology yaitu menjadi komunitas typology yang hidup da
 Saat ini proyek berada pada tahap **prototipe awal**. Kami sedang menyusun struktur halaman, sistem CMS, dan dasar konten.
 
 ---
-
