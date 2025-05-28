@@ -13,7 +13,7 @@ export default function Contact() {
           For general questions about La Maison Typology or partnerships, please email us at:
         </p>
         <p className="mt-2">
-          <a href="mailto:info@lamaisontypology.com" className="text-blue-500 hover:underline">info@lamaisontypology.com</a>
+          <a href="mailto:lamaisontypology@gmail.com" className="text-blue-500 hover:underline">lamaisontypology@gmail.com</a>
         </p>
         <p className="mt-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -26,7 +26,7 @@ export default function Contact() {
           If you need technical support or assistance with our community, our support team is available at:
         </p>
         <p className="mt-2">
-          <a href="mailto:support@lamaisontypology.com" className="text-blue-500 hover:underline">support@lamaisontypology.com</a>
+          <a href="mailto:lamaisontypology@gmail.com" className="text-blue-500 hover:underline">lamaisontypology@gmail.com</a>
         </p>
         <p className="mt-2">
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
