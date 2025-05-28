@@ -46,6 +46,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/test" className="text-white hover:text-gray-300">
+              Test
+            </Link>
+          </li>
+          <li>
             <Link href="/contact" className="text-white hover:text-gray-300">
               Contact Us
             </Link>
@@ -67,11 +72,17 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
+          <li>
+            <Link href="/test" className="block text-white hover:text-gray-300 p-2 rounded" onClick={toggleMenu}>
+              Test
+            </Link>
+          </li>
             <li>
               <Link href="/contact" className="block text-white hover:bg-gray-700 p-2 rounded" onClick={toggleMenu}>
                 Contact Us
               </Link>
             </li>
+        
             <li>
               <Link href="/blog" className="block text-white hover:bg-gray-700 p-2 rounded" onClick={toggleMenu}>
                 Blog
