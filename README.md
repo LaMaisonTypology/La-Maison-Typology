@@ -1,6 +1,7 @@
 # 🏛️ La Maison Typology
 
-**La Maison Typology** adalah proyek web edukatif yang berfokus pada eksplorasi kepribadian manusia. Kami membangun platform ini sebagai tempat belajar, merenung, dan menemukan pola dalam diri serta orang lain — dengan pendekatan estetis, informatif, dan berbasis teknologi modern.
+**La Maison Typology** adalah Otoriter Hangat. La Maison Typology dijalankan dengan sistem yang terstruktur dan terkontrol, dengan peran aktif admin sebagai pengarah suasana, penjaga etika, dan menjembatani diskusi. Meski bersifat otoriter, komunitas tetap membuka ruang untuk kehangatan, interaksi santai, serta saling berbagi pandangan dengan tetap menjaga batas dan relevansi.
+
 
 ---
 
@@ -29,9 +30,7 @@ Kami berkomitmen menyatukan keahlian kami untuk membangun proyek ini dengan inte
 
 ## 🎯 Visi Kami
 
-> "Typology bukan sekadar label—ia adalah jendela menuju pemahaman manusia yang lebih dalam."
-
-Kami ingin menghadirkan platform yang tidak hanya informatif, tetapi juga menyentuh sisi humanistik, filosofis, dan visual dari konsep kepribadian.
+Visi komunitas La Maison Typology yaitu menjadi komunitas typology yang hidup dan aktif, yang mengedepankan etika, keteraturan, serta menjadi ruang belajar dan bertumbuh bersama dalam memahami typology secara mendalam.
 
 ---
 
@@ -41,10 +40,3 @@ Saat ini proyek berada pada tahap **prototipe awal**. Kami sedang menyusun struk
 
 ---
 
-## 🤝 Kolaborasi & Kontribusi
-
-Jika kamu tertarik untuk ikut ambil bagian—baik sebagai pengembang, penulis, atau pengamat yang ingin memberi masukan—jangan ragu untuk menghubungi kami atau kirimkan *issue* dan *pull request* di repositori ini.
-
----
-
-> _"La Maison Typology bukan hanya tempat belajar, tapi juga ruang untuk mengenal diri—dengan penuh keheningan dan kejelasan."_ ✨
