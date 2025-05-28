@@ -6,7 +6,7 @@ export default function Home() {
       id: 1,
       imageSrc: "/next.svg", 
       altText: "Slide 1 Image",
-      title: "Komunitas Berbagi Ilmu",
+      title: "Title ",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
