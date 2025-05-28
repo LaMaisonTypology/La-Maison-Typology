@@ -55,28 +55,41 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="mb-12 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center border-b pb-2 border-gray-200 dark:border-gray-700">Galeri Komunitas</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {slides.map((slide) => (
-            <div key={slide.id} className="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
-              <div className="relative w-full h-48 md:h-56 lg:h-64">
-                <Image
-                  src={slide.imageSrc}
-                  alt={slide.altText}
-                  layout="fill" // Makes the image fill the parent container
-                  objectFit="cover" // Covers the area without distorting aspect ratio
-                  className="rounded-t-lg"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{slide.title}</h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{slide.description}</p>
-              </div>
-            </div>
-          ))}
+<section className="mb-12 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md">
+  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center border-b pb-2 border-gray-200 dark:border-gray-700">
+    Galeri Komunitas
+  </h2>
+  
+  <div className="overflow-x-auto">
+    <div className="flex gap-6 snap-x snap-mandatory overflow-x-scroll scroll-smooth pb-4">
+      {slides.map((slide) => (
+        <div
+          key={slide.id}
+          className="min-w-[80%] md:min-w-[45%] lg:min-w-[30%] bg-white dark:bg-gray-900 rounded-lg shadow-md snap-start"
+        >
+          <div className="relative w-full h-48 md:h-56 lg:h-64">
+            <Image
+              src={slide.imageSrc}
+              alt={slide.altText}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-t-lg"
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              {slide.title}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              {slide.description}
+            </p>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <section className="mb-12 p-6 bg-white dark:bg-gray-900 rounded-lg shadow-sm">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b pb-2 border-gray-200 dark:border-gray-700">Misi Kami</h2>
