@@ -32,7 +32,8 @@ export default function Home() {
           <Image
             src="/next.svg" 
             alt="Header Image"
-            width={300} 
+            width={300}
+            height={100} 
             priority
           />
         </div>
