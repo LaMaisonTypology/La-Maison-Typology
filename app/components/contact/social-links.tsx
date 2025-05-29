@@ -1,8 +1,8 @@
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Globe } from "lucide-react"
+import { Instagram, Globe} from "lucide-react"
 
 export default function SocialLinks() {
   const socialLinks = [
-    { name: "Tiktok", icon: <Instagram size={24} />, url: " https://www.tiktok.com/@lamaisontypology" },
+    { name: "Tiktok", icon: <Globe size={24} />, url: " https://www.tiktok.com/@lamaisontypology" },
 
     { name: "Instagram", icon: <Instagram size={24} />, url: "https://instagram.com/lamaisontypology" },
     { name: "Website", icon: <Globe size={24} />, url: "https://lamaisontypology.vercel.app" },

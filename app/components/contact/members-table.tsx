@@ -1,12 +1,5 @@
 "use client"
 
-interface Member {
-  id: number
-  name: string
-  type: string
-  joinDate: string
-  status: "Active" | "Inactive" | "Pending"
-}
 
 export default function MembersSummary() {
 

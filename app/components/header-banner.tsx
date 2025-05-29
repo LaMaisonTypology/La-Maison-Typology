@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import Image from "next/image"
 
 interface HeaderBannerProps {
@@ -73,7 +72,7 @@ export default function HeaderBanner({
           <div className="mt-16">
             <div className="relative">
               <div className="text-amber-300/80 text-lg md:text-xl font-light italic tracking-wider">
-                "Elegance is the only beauty that never fades"
+  &quot;Elegance is the only beauty that never fades&quot;
               </div>
               <div className="mt-2 text-amber-400/60 text-sm tracking-widest uppercase">— Audrey Hepburn</div>
             </div>
