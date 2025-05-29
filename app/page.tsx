@@ -22,7 +22,7 @@ export default function Home() {
                 Selamat Datang di Komunitas Kami
               </h2>
               <p className="text-lg text-amber-300 leading-relaxed max-w-3xl mx-auto">
-                La Maison Typology adalah Otoriter Hangat, dijalankan dengan sistem yang terstruktur dan terkontrol, dengan peran aktif admin sebagai pengarah suasana, penjaga etika, dan menjembatani diskusi. Meski bersifat otoriter, komunitas tetap membuka ruang untuk kehangatan, interaksi santai, serta saling berbagi pandangan dengan tetap menjaga batas dan relevansi.
+                La Maison Typology dijalankan dengan sistem yang terstruktur dan terkontrol, dengan peran aktif admin sebagai pengarah suasana, penjaga etika, dan menjembatani diskusi. Meski bersifat otoriter, komunitas tetap membuka ruang untuk kehangatan, interaksi santai, serta saling berbagi pandangan dengan tetap menjaga batas dan relevansi.
               </p>
             </div>
           </div>
