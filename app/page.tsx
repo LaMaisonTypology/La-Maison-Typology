@@ -10,7 +10,7 @@ export default function Home() {
         title="La Maison"
         subtitle="Typology"
         imagePath="/mansion-header.png"
-        description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        description="Terarah dalam Etika, Akrab dalam Interaksi dan Merangkul Kebersamaan."
         height="min-h-[40vh]"
       />
 
