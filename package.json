@@ -10,6 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tinacms/cli": "^1.9.8",
+    "@tinacms/schema-tools": "^1.7.4",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "react": "^19.0.0",
@@ -19,8 +21,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@tinacms/cli": "^1.9.8",
-    "@types/node": "^20.17.54",
+    "@types/node": "^20.17.55",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link href="/" className="text-amber-300 hover:text-amber-100 transition-colors duration-300">
               Home
             </Link>
-            <Link href="/blog" className="text-amber-300 hover:text-amber-100 transition-colors duration-300">
+            <Link href="/posts" className="text-amber-300 hover:text-amber-100 transition-colors duration-300">
               Blog
             </Link>
             <Link href="/test" className="text-amber-300 hover:text-amber-100 transition-colors duration-300">
@@ -55,7 +55,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/blog"
+              href="/posts"
               className="block text-amber-300 hover:text-amber-100 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
