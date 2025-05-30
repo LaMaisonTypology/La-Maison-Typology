@@ -46,6 +46,12 @@ export default defineConfig({
             required: true,
           },
           {
+            type: 'image',
+            name: 'headerImage',
+            label: 'Header Image',
+            required: false,
+          },
+          {
             type: 'rich-text',
             name: 'body',
             label: 'Body',
