@@ -1,8 +1,9 @@
 import { client } from '../../../tina/__generated__/client'
 import Post from './client-page'
-
-// Define a compatible type for params
-interface PageProps {
+import { PageProps as NextPageProps } from 'next';
+import PageProps from "next"
+// Adjust the type definition to align with Next.js expectations
+interface PageProps extends NextPageProps {
   params: {
     filename: string[];
   };
