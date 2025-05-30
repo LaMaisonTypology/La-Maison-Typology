@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { User } from "lucide-react"
 
 interface AdminProfile {
   id: number
@@ -35,13 +36,17 @@ export default function AdminProfiles() {
             key={admin.id}
             className="bg-stone-900/60 border border-amber-800 rounded-xl shadow-sm hover:shadow-md transition duration-300 overflow-hidden"
           >
-            <div className="relative w-full h-40">
-              <Image
-                src={admin.imageSrc}
-                alt={admin.name}
-                fill
-                className="object-cover"
-              />
+            <div className="relative w-full h-40 flex items-center justify-center bg-stone-800">
+              {admin.imageSrc === "/placeholder.svg" ? (
+                <User className="text-amber-400 w-16 h-16" />
+              ) : (
+                <Image
+                  src={admin.imageSrc}
+                  alt={admin.name}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
             <div className="p-4 text-center">
               <h3 className="text-amber-100 text-lg font-semibold">{admin.name}</h3>
