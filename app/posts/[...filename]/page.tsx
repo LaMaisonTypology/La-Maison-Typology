@@ -1,11 +1,5 @@
 import { client } from '../../../tina/__generated__/client'
 import Post from './client-page'
-// Adjust the type definition to align with Next.js expectations
-interface PageProps {
-  params: {
-    filename: string[];
-  };
-}
 
 export default async function Page({ params }: { params: { filename: string[] } }) {
   const filename = params.filename.join('/') + '.md';
