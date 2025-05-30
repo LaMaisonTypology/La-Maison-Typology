@@ -2,6 +2,7 @@
 import { useTina } from 'tinacms/dist/react'
 import { TinaMarkdown } from 'tinacms/dist/rich-text'
 import type { PostQuery } from '../../../tina/__generated__/types'
+import Image from 'next/image'
 
 interface ClientPageProps {
   query: string
@@ -31,7 +32,7 @@ export default function Post(props: ClientPageProps) {
         <div className="max-w-3xl mx-auto">
           <div className="bg-gradient-to-br from-stone-800/90 to-amber-900/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-amber-800/30 p-8 md:p-12">
             {/* Header image dari CMS jika ada, fallback ke default */}
-            <img
+            <Image
               src={data.post.headerImage ? data.post.headerImage : "/mansion-header.png"}
               alt="Blog Header"
               className="w-full max-w-2xl rounded-3xl shadow-xl mb-8 object-cover mx-auto"
