@@ -6,7 +6,7 @@ import { useTina } from 'tinacms/dist/react'
 import { TinaMarkdown } from 'tinacms/dist/rich-text'
 import client from '../../../tina/__generated__/client'
 
-const BlogPage = (props) => {
+const BlogPage = (props: { [key: string]: any }) => {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,
@@ -48,7 +48,7 @@ const BlogPage = (props) => {
   )
 }
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params }: { params: { filename: string } }) => {
   let data = {}
   let query = {}
   let variables = { relativePath: `${params.filename}.md` }
@@ -74,17 +74,25 @@ export const getStaticProps = async ({ params }) => {
 export const getStaticPaths = async () => {
   const postsListData = await client.queries.postConnection()
 
-  return {
-    paths: postsListData.data.postConnection.edges.map((post) => ({
+  if (!postsListData?.data?.postConnection?.edges) {
+    return { notFound: true }
+  }
+
+  const paths = postsListData.data.postConnection.edges
+    .filter((post) => post?.node?._sys?.filename)
+    .map((post) => ({
       params: { filename: post.node._sys.filename },
-    })),
+    }))
+
+  return {
+    paths,
     fallback: false,
   }
 }
 
 export default BlogPage
 
-const PageSection = (props) => {
+const PageSection = (props: { [key: string]: any }) => {
   return (
     <>
       <h2>{props.heading}</h2>
@@ -97,7 +105,7 @@ const components = {
   PageSection: PageSection,
 }
 
-const ContentSection = ({ content }) => {
+const ContentSection = ({ content }: { content: string }) => {
   return (
     <div className='relative py-16 bg-white overflow-hidden text-black'>
       <div className='hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full'>
