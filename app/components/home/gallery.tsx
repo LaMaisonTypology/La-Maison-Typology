@@ -27,7 +27,7 @@ export default function Gallery() {
         "Jantung rumah kita. Disinlah diskusi teoritis dan praktis mengenai typology berlangsung.",
     },
     {
-      id: 3,
+      id: 4,
       imageSrc: "/deepl.jpeg",
       altText: "Slide 4 Image",
       title: "Kamar #2 : Deep Talk & Pembahasan Berat",
@@ -35,7 +35,7 @@ export default function Gallery() {
         "Tempat berbincang mengenai Filsafat, Sains, Politik, Sosial, Budaya, dan topik berat lainnya.",
     },
     {
-      id: 3,
+      id: 5,
       imageSrc: "/game.jpeg",
       altText: "Slide 5 Image",
       title: "Kamar #3 : Ruang Bermain dan Game",
