@@ -17,8 +17,6 @@ export default function Post(props: ClientPageProps) {
     data: props.data,
   })
 
-  console.log('Header Image:', data.post.headerImage); // Debugging line added
-
  return (
     <div className="relative py-16 min-h-screen bg-gradient-to-br from-stone-900/95 to-amber-950/95 overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
@@ -34,6 +32,27 @@ export default function Post(props: ClientPageProps) {
         <div className="max-w-3xl mx-auto">
           <div className="bg-gradient-to-br from-stone-800/90 to-amber-900/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-amber-800/30 p-8 md:p-12">
             {/* Header image dari CMS jika ada, fallback ke default */}
+            {data.post.headerImage ? (
+              <div className="mb-8">
+                <Image
+                  src={data.post.headerImage}
+                  alt={data.post.title}
+                  width={800}
+                  height={400}
+                  className="rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+            ) : (
+              <div className="mb-8">
+                <Image
+                  src="/mansion-header.png" // Gambar default
+                  alt="Default Header"
+                  width={800}
+                  height={400}
+                  className="rounded-lg shadow-lg mx-auto"
+                />
+              </div>
+            )}
             <h1 className="text-4xl font-bold text-center text-amber-200 mb-8 leading-tight drop-shadow">
               {data.post.title}
             </h1>
