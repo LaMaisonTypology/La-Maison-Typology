@@ -33,10 +33,10 @@ export default function Post(props: ClientPageProps) {
           <div className="bg-gradient-to-br from-stone-800/90 to-amber-900/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-amber-800/30 p-8 md:p-12">
             {/* Header image dari CMS jika ada, fallback ke default */}
             <Image
-              src={data.post.headerImage ? data.post.headerImage : "/mansion-header.png"}
-              alt="Blog Header"
+              src={data.post.headerImage || "/mansion-header.png"}
+              alt={data.post.headerImage ? "Blog Header" : "Default Blog Header"}
               className="w-full max-w-2xl rounded-3xl shadow-xl mb-8 object-cover mx-auto"
-              style={{height:'220px',objectFit:'cover'}}
+              style={{ height: '220px', objectFit: 'cover' }}
             />
             <h1 className="text-4xl font-bold text-center text-amber-200 mb-8 leading-tight drop-shadow">
               {data.post.title}
