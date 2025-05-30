@@ -8,7 +8,7 @@ Apa itu Enneagram?\
 Enneagram adalah sistem kepribadian yang mengklasifikasikan manusia ke dalam 9 tipe utama berdasarkan motivasi terdalam, bukan sekadar perilaku luar.
 
 \
-9 Tipe Enneagram:
+![](/curhat.jpeg)9 Tipe Enneagram:
 
 * Type 1 – The Reformer
 * Type 2 – The Helper
