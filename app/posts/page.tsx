@@ -32,10 +32,10 @@ export default async function BlogListPage() {
                 >
                   <h2 className="text-2xl font-bold text-amber-100 mb-2 group-hover:text-amber-300 transition-colors line-clamp-2">{post.node.title}</h2>
                   <div className="flex-1 text-amber-300 mb-4 line-clamp-3">
-                    {post.node.body ? post.node.body.split(' ').slice(0, 10).join(' ') + '...' : 'Tidak ada cuplikan tersedia.'}
+                    {post.node.body && typeof post.node.body === 'string' ? post.node.body.split(' ').slice(0, 10).join(' ') + '...' : 'Tidak ada cuplikan tersedia.'}
                   </div>
                   <div className="flex items-center justify-between text-sm text-amber-400 mt-auto">
-                    <span>Slug: {post.node._sys.filename.replace('.md', '')}</span>
+                    <span>{post.node._sys.filename.replace('.md', '')}</span>
                     {post.node.author && <span className="italic">by {post.node.author}</span>}
                   </div>
                 </Link>
