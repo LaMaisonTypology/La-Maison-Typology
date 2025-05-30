@@ -28,11 +28,11 @@ export default async function BlogListPage() {
                 <Link
                   key={post.node.id}
                   href={`/posts/${post.node._sys.filename}`}
-                  className="flex flex-col h-full bg-gradient-to-br from-stone-800/90 to-amber-900/90 border border-amber-700/30 rounded-2xl shadow-lg hover:shadow-2xl px-8 py-6 hover:scale-[1.03] transition-all group"
+                  className="flex flex-col h-full bg-gradient-to-br from-amber-800/90 to-stone-900/90 border border-amber-700/30 rounded-2xl shadow-lg hover:shadow-2xl px-8 py-6 hover:scale-[1.03] transition-all group"
                 >
                   <h2 className="text-2xl font-bold text-amber-100 mb-2 group-hover:text-amber-300 transition-colors line-clamp-2">{post.node.title}</h2>
                   <div className="flex-1 text-amber-300 mb-4 line-clamp-3">
-                    {/* Optionally show excerpt or first lines of body here if available */}
+                    {post.node.body ? post.node.body.split(' ').slice(0, 10).join(' ') + '...' : 'Tidak ada cuplikan tersedia.'}
                   </div>
                   <div className="flex items-center justify-between text-sm text-amber-400 mt-auto">
                     <span>Slug: {post.node._sys.filename.replace('.md', '')}</span>
