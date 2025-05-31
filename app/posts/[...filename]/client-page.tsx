@@ -43,15 +43,6 @@ export default function Post(props: ClientPageProps) {
                 />
               </div>
             ) : (
-              <div className="mb-8">
-                <Image
-                  src="/mansion-header.png" // Gambar default
-                  alt="Default Header"
-                  width={800}
-                  height={400}
-                  className="rounded-lg shadow-lg mx-auto"
-                />
-              </div>
             )}
             <h1 className="text-4xl font-bold text-center text-amber-200 mb-8 leading-tight drop-shadow">
               {data.post.title}
