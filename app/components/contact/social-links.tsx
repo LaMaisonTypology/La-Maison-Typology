@@ -1,12 +1,17 @@
-import { Instagram, Globe} from "lucide-react"
+import { Instagram, Globe, MessageCircleMore } from "lucide-react"
 
 export default function SocialLinks() {
   const socialLinks = [
-    { name: "Tiktok", icon: <Globe size={24} />, url: " https://www.tiktok.com/@lamaisontypology" },
-
+    { name: "Tiktok", icon: <Globe size={24} />, url: "https://www.tiktok.com/@lamaisontypology" },
     { name: "Instagram", icon: <Instagram size={24} />, url: "https://instagram.com/lamaisontypology" },
     { name: "Website", icon: <Globe size={24} />, url: "https://lamaisontypology.vercel.app" },
   ]
+
+  const contactLink = {
+    name: "Instagram",
+    icon: <MessageCircleMore size={20} />,
+    url: "https://instagram.com/lamaisontypology",
+  }
 
   return (
     <section className="container mx-auto px-6 py-16">
@@ -32,6 +37,19 @@ export default function SocialLinks() {
               <span className="text-amber-200 font-medium">{link.name}</span>
             </a>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <p className="text-lg text-amber-100 mb-4">Ingin bergabung dengan komunitas?</p>
+          <a
+            href={contactLink.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-amber-700 hover:bg-amber-800 transition-colors duration-300 text-stone-100 font-semibold shadow-md hover:shadow-lg"
+          >
+            {contactLink.icon}
+            Chat kami via {contactLink.name}
+          </a>
         </div>
       </div>
     </section>
