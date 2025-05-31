@@ -353,7 +353,10 @@ export default function PersonalityTest() {
     setCurrentAiInput("")
 
     // Add user message to chat
-    const updatedMessages = [...aiMessages, { role: "user", content: userAnswer }]
+    const updatedMessages = [
+      ...aiMessages,
+      { role: "user" as "user" | "assistant" | "system", content: userAnswer },
+    ]
     setAiMessages(updatedMessages)
 
     // Save answer
